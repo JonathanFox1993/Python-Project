@@ -4,7 +4,7 @@ import matplotlib.cm as cmx
 import pandas
 
 
-with open("data/iris.csv") as f:
+with open("iris.csv") as f:
     names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'Name']
     dataset = pandas.read_csv(f, names=names)
 
