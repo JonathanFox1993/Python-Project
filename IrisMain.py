@@ -5,12 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.colors as colors
 import matplotlib.cm as cmx
 import scatterplot
-from scatterplot import petalLSW
-from scatterplot import petalLSL
-from scatterplot import petalLW
-from scatterplot import petalSEPWL
 from scatterplot import petalSLPW
-from scatterplot import petalSLW
 
 
 
@@ -75,27 +70,39 @@ with open("iris.csv") as f:
                                 num1 = int(input('Please enter the number of the option you want: '))
                                 if num1 == 1:
                                     m =1
-                                    petalLW()
+                                    xaxis = 'petal-length'
+                                    yaxis = 'petal-width'
+                                    petalSLPW(xaxis,yaxis)
                                 else:
                                     if num1 == 2:
                                         m=1
-                                        petalLSW()
+                                        xaxis = 'petal-length'
+                                        yaxis = 'sepal-width'
+                                        petalSLPW(xaxis,yaxis)
                                     else:
                                         if num1 == 3:
                                             m=1
-                                            petalLSL()
+                                            xaxis = 'petal-length'
+                                            yaxis = 'sepal-length'
+                                            petalSLPW(xaxis,yaxis)
                                         else:
                                             if num1 == 4:
                                                 m=1
-                                                petalSLPW()
+                                                xaxis = 'sepal-length'
+                                                yaxis = 'petal-width'
+                                                petalSLPW(xaxis,yaxis)
                                             else:
                                                 if num1 == 5:
                                                     m=1
-                                                    petalSEPWL()
+                                                    xaxis = 'petal-width'
+                                                    yaxis = 'sepal-length'
+                                                    petalSLPW(xaxis,yaxis)
                                                 else:
                                                     if num1 == 6:
                                                         m=1
-                                                        petalSLW()
+                                                        xaxis = 'sepal-length'
+                                                        yaxis = 'petal-width'
+                                                        petalSLPW(xaxis,yaxis)
                                                     else:
                                                         if num1 ==7:
                                                             sys.exit()
