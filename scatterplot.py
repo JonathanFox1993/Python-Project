@@ -3,14 +3,14 @@ import matplotlib.colors as colors
 import matplotlib.cm as cmx
 import pandas
 
-
+#open the dataset
 with open("iris.csv") as f:
     names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'Name']
     dataset = pandas.read_csv(f, names=names)
 
 
 def petalSLPW(xaxis, yaxis):
-    #Scatter of Petal
+    #Scatter of Petal with two argument for petal width, petal length , sepal width and sepal length
     x=dataset[xaxis]
     y=dataset[yaxis]
 
