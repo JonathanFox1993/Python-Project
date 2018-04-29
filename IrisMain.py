@@ -6,7 +6,7 @@ import matplotlib.colors as colors
 import matplotlib.cm as cmx
 import scatterplot
 from scatterplot import petalSLPW
-
+#importing all the libraies i need and my scatterplot class
 
 
 
@@ -16,20 +16,25 @@ with open("iris.csv") as f:
     names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'Name']
     dataset = pandas.read_csv(f, names=names)
 
-    #Print text to screen
+    #variables for my while loop
     i = 0
     j= 0
     k=0
     m =0
+    #Print text to screen
     print('1) Data Dimensions 2) Data Graphs')
     #prompt user input of a number
     
     #if else statement for each answer if they choose option 1 it will go to the data dimensions
     #while loop here and a few other places to just loop the code in case you enter the wrong number
     #if you enter a letter or a wrong number you will be prompted to enter again
+    #while i is not equal to 1
     while i != 1:
         numb = int(input('Please enter the number of the option you want: '))
+        #input the number option
         if numb == 1:
+            #if you enter 1 it will set the i to 1 which will end the loop
+            #then print the next option to the terminal and then i just repeat this process and call on my methods for the graphs
             i=1
             print('1) Show Size of Table 2) Show statistics 3) Show Flower types 4) Exit')
             while j !=1:
